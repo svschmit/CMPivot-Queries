@@ -47,7 +47,7 @@ SoftwareUpdate | where (Device == 'DeviceName')
 # Find Clients Missing Updates
 ```
 SoftwareUpdate    
-| where KBArticleIDs == 'KB4565489'
+| where KBArticleIDs == 'KBXXXXXXX'
 ```
 # Boot Times 
 ```
@@ -120,7 +120,7 @@ OptionalFeature
 ```
 QuickFixEngineering | where InstalledOn >= ago(90d)
 ```
-# Windows 10 Sprache Lannguage
+# Windows 10 language
 ```
 OperatingSystem | where OSLanguage == 1033
 ```
@@ -141,7 +141,7 @@ Office365ProPlusConfigurations | where VersionToReport < '16.0.11328.20644' and 
 ```
 Office365ProPlusConfigurations | where VersionToReport < '16.0.12827.20656' and cfgUpdateChannel == 'http://officecdn.microsoft.com/pr/55336b82-a18d-4dd6-b5f6-9e5095c314a6'
 ```
-# All Devices with errors duringUpdate Scan
+# All Devices with errors during Update Scan
 ```
 ccmlog ('UpdatesDeployment') | where (LogText like '%0x87d00215%') | distinct Device
 ```
