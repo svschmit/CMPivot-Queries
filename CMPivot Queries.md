@@ -154,7 +154,7 @@ InstalledSoftware
 ```
 OperatingSystem  | summarize dcount(Device) by bin(LastBootUpTime,1d) | render barchart
 ```
-# Local Policy Corruption:
+# Local Policy Corruption
 ```
 WinEvent('System', 1d)
 | summarize dcount(Device) by ID, Device
