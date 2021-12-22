@@ -1,7 +1,7 @@
 # CMPivot-Queries
 Collection of 43 helpful CMPivot Queries, these queries will be updated at irregular intervals.  
 
-Please note that some queries need to be customized for your needs.
+Please note that some queries need to be customized for your needs.  
 Full list :
 * Get All Admins on Client
 * Check WSUS Settings on clients
