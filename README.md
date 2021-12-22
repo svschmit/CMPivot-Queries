@@ -1,6 +1,7 @@
 # CMPivot-Queries
 Collection of 43 helpful CMPivot Queries.  
-Will be updated at irregular intervals.
+Please note that some queries need to be customized for your needs.  
+Will be updated at irregular intervals.  
 
 Full list :
 * Get All Admins on Client
