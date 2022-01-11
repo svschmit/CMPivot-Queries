@@ -163,7 +163,7 @@ WinEvent('System', 1d)
 | summarize count() by substring( strcat(Caption, ' ', Version), 10 )
 | render barchart with (title='Local Policy Corrupt', xtitle='OS', ytitle='Number of Devices')
 ```
-# Confilicting GPO
+# Conflicting GPO
 ```
 FileContent('C:\\Windows\CCM\Logs\PwrProvider.log') | where Content like '%Conflict with Group Policy%' | distinct Device
 ```
