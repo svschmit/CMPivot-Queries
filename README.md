@@ -22,16 +22,16 @@ Full list :
 * Process
 * DNS Server
 * Patches installed in last 90 days
-* Windows 10 Sprache Lannguage
+* Windows 10 Language
 * Count of a software title by version
 * M365 Apps Channels
 * Semi-Annual M365 Apps ProPlus Out of Support
 * Monthly  M365 Apps ProPlus Out of Support
-* All Devices with errors duringUpdate Scan
+* All Devices with errors during Update Scan
 * Java Version
 * Last day of Boot
 * Local Policy Corruption
-* Confilicting GPO
+* Conflicting GPO
 * Find all devices with old Intel WIFI driver
 * Clients with GUID 0000
 * Find Clients with GUID last change day today
