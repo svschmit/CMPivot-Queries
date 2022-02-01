@@ -227,3 +227,14 @@ CcmLog('execmgr', 7d)
 | where LogText like 'A duplicate execution request is found for program%'
 | project Device, LogText, DateTime
 ```
+# Devices with Debug\Verbose Logging enabled
+```
+ClientDiagnostics
+| where DebugLoggingEnabled == 'True'
+```
+# .Net Version installed on Devices
+```
+Registry('hklm:\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full') 
+| where Property == 'Version' 
+| summarize count() by Value | render barchart
+```

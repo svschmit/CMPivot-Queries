@@ -1,5 +1,5 @@
 # CMPivot-Queries
-Collection of 43 helpful CMPivot Queries, these queries will be updated at irregular intervals.  
+Collection of 45 helpful CMPivot Queries, these queries will be updated at irregular intervals.  
 
 Please note that some queries need to be customized for your needs.  
 Full list :
@@ -44,4 +44,6 @@ Full list :
 * Is Powershell V2 installed?
 * Find Exchange Servers
 * Duplicate Execution request last 7 days
+* Devices with Debug\Verbose Logging enabled
+* .Net Version installed on Devices
 
