@@ -1,5 +1,5 @@
 # CMPivot-Queries
-Collection of 45 helpful CMPivot Queries, these queries will be updated at irregular intervals.  
+Collection of 48 helpful CMPivot Queries, these queries will be updated at irregular intervals.  
 
 Please note that some queries need to be customized for your needs.  
 Full list :
@@ -46,4 +46,8 @@ Full list :
 * Duplicate Execution request last 7 days
 * Devices with Debug\Verbose Logging enabled
 * .Net Version installed on Devices
+* All Windows 10 and Windows 11 Versions
+* Listening Port for Remote Desktop
+* All Clients with a specific Event ID
+
 

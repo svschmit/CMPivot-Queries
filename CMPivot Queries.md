@@ -258,3 +258,11 @@ BuildNumber == '19045', 'Windows 10 22H2',
 BuildNumber == '22000', 'Windows 11 21H2', 
 BuildNumber == '22621', 'Windows 11 22H2', BuildNumber	)
 | summarize count() by OSVersion | render columnchart with(title='Windows 10 / 11 versions', ytitle='Count')
+```
+# Listening Port for Remote Desktop
+```
+Registry('HKLM:\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp') | where Property == "PortNumber"
+```
+# All Clients with a specific Event ID
+```
+EventLog('System') | summarize countif( (EventID == 1234) ) by Device | where (countif_ > 0)
