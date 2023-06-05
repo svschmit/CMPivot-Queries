@@ -238,3 +238,23 @@ Registry('hklm:\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full')
 | where Property == 'Version' 
 | summarize count() by Value | render barchart
 ```
+# All Windows 10 and Windows 11 version
+```
+OperatingSystem | where Caption contains '10' or Caption contains '11' | project OSVersion=case(
+BuildNumber == '10240', 'Windows 10 1507',
+BuildNumber == '10586', 'Windows 10 1511',
+BuildNumber == '14393', 'Windows 10 1607',
+BuildNumber == '15063', 'Windows 10 1703',
+BuildNumber == '16299', 'Windows 10 1709',
+BuildNumber == '17134', 'Windows 10 1803',
+BuildNumber == '17763', 'Windows 10 1809',
+BuildNumber == '18362', 'Windows 10 1903',
+BuildNumber == '18363', 'Windows 10 1909',
+BuildNumber == '19041', 'Windows 10 2004',
+BuildNumber == '19042', 'Windows 10 20H2',
+BuildNumber == '19043', 'Windows 10 21H1',
+BuildNumber == '19044', 'Windows 10 21H2',
+BuildNumber == '19045', 'Windows 10 22H2',
+BuildNumber == '22000', 'Windows 11 21H2', 
+BuildNumber == '22621', 'Windows 11 22H2', BuildNumber	)
+| summarize count() by OSVersion | render columnchart with(title='Windows 10 / 11 versions', ytitle='Count')
